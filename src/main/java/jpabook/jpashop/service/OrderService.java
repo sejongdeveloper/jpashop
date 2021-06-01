@@ -62,10 +62,10 @@ public class OrderService {
     /**
      * 주문 검색
      */
-/*
+
     public List<Order> findOrders(OrderSearch orderSearch) {
         return orderRepository.findAll(orderSearch);
     }
-*/
+
 
 }

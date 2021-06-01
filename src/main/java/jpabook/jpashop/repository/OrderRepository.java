@@ -27,7 +27,7 @@ public class OrderRepository {
     }
 
     public List<Order> findAll(OrderSearch orderSearch) {
-        return findAllByCriteria(orderSearch);
+        return findAllByString(orderSearch);
     }
 
     public List<Order> findAllByString(OrderSearch orderSearch) {
