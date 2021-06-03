@@ -50,7 +50,7 @@ public class OrderApiController {
      */
     @GetMapping("/api/v1/orders")
     public List<Order> ordersV1() {
-        List<Order> all = orderRepository.findAllByString(new OrderSearch());
+        List<Order> all = orderRepository.findAll(new OrderSearch());
         for (Order order : all) {
             order.getMember().getName(); //LAZY 강제 초기화
             order.getDelivery().getAddress(); //LAZY 강제 초기화
